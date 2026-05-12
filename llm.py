@@ -27,7 +27,7 @@ def get_retriever():
 
 
 def get_history_retriever():
-    
+    llm = get_llm()  # ← 이 줄 추가!
     retriever = get_retriever() 
     
     contextualize_q_system_prompt = (
